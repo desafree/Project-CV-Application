@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Editable from '../src/components/editable'
 import NotEditable from "./components/notEditable";
+import "../src/styles/App.css"
 
 class App extends Component {
   constructor() {
@@ -62,7 +63,7 @@ class App extends Component {
 
   render() {
     return(
-      <div>
+      <div className='container'>
         {this.state.number===0?<Editable change={this.change} confirm={this.confirm} info={this.state.infoDef}/>:<NotEditable info={this.state.infoDef} changeNumber={this.changeNumber}/>}
       </div>
     )
