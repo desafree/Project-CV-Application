@@ -5,7 +5,7 @@ class NotEditable extends Component {
     render() {
         return(
             <div>
-                <h3>{this.props.info.name}</h3>
+                <h3 >{this.props.info.name}</h3>
                 <h3>{this.props.info.email}</h3>
                 <h3>{this.props.info.number}</h3>
                 <h3>{this.props.info.school}</h3>

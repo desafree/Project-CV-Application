@@ -35,6 +35,8 @@ class App extends Component {
       infoChang:{}
     })
 
+    this.confirmNumber()
+
     console.log(this.state)
   }
 
@@ -61,7 +63,7 @@ class App extends Component {
   render() {
     return(
       <div>
-        {this.state.number===0?<Editable change={this.change} confirm={this.confirm} info={this.state.infoDef} changeNumber={this.confirmNumber}/>:<NotEditable info={this.state.infoDef} changeNumber={this.cNumber}/>}
+        {this.state.number===0?<Editable change={this.change} confirm={this.confirm} info={this.state.infoDef}/>:<NotEditable info={this.state.infoDef} changeNumber={this.changeNumber}/>}
       </div>
     )
   }
